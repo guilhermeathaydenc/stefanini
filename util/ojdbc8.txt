@@ -1,0 +1,1 @@
+mvn install:install-file -Dfile=C:\kliven\pos\arteon\util\ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=18.3.0.0 -Dpackaging=jar

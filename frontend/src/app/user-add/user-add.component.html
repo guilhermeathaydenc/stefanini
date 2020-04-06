@@ -1,0 +1,26 @@
+<!--
+ * #solution   : STEFANINI (front-end)
+ * #objective  : PROCESSO SELETIVO : VAGA (DEV SR REC)
+ 
+ * #author     : guilherme.athayde.nc@gmail.com
+ * #phone      : 81 99687.3959
+ * #profession : senior full stack developer analyst
+ * #date       : 05/04/2020
+-->
+
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Add User</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="login">User Login:</label>
+      <input type="text" formControlName="login" placeholder="login" name="login" class="form-control" id="login">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" formControlName="password" placeholder="password" name="password" class="form-control" id="password">
+    </div>
+
+    <button class="btn btn-success">Add</button>
+  </form>
+</div>

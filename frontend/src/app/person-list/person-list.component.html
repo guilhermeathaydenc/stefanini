@@ -1,0 +1,44 @@
+<!--
+ * #solution   : STEFANINI (front-end)
+ * #objective  : PROCESSO SELETIVO : VAGA (DEV SR REC)
+ 
+ * #author     : guilherme.athayde.nc@gmail.com
+ * #phone      : 81 99687.3959
+ * #profession : senior full stack developer analyst
+ * #date       : 05/04/2020
+-->
+<main class="container mt-5">
+  <section class="card mb-3">
+    <div class="card-header" id="persons">
+      <h5 class="text-primaryblack">
+        <span tabindex="0" class="persons">PERSONS</span>
+      </h5>
+    </div>
+    <div class="card-body">
+      <table class="table table-sm table-striped table-bordered table-hover tablefocus">
+        <tr>
+          <th>ID</th>
+          <th colspan="2">NAME</th>
+          <th colspan="2">GENDER</th>
+          <th colspan="2">EMAIL</th>
+          <th colspan="2">BIRTHDAY</th>
+          <th colspan="2">NATURALNESS</th>
+          <th colspan="2">NATIONALITY</th>
+          <th colspan="2">CPF</th>
+        </tr>
+        <tr *ngFor="let person of persons">
+          <td>{{person.id}}</td>
+          <td>{{person.name}}</td>
+          <td>{{person.gender}}</td>
+          <td>{{person.email}}</td>
+          <td>{{person.birthday}}</td>
+          <td>{{person.naturalness}}</td>
+          <td>{{person.nationality}}</td>
+          <td>{{person.cpf}}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="card-footer">
+    </div>
+  </section>
+</main>

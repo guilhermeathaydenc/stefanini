@@ -1,0 +1,51 @@
+<!--
+ * #solution   : STEFANINI (front-end)
+ * #objective  : PROCESSO SELETIVO : VAGA (DEV SR REC)
+ 
+ * #author     : guilherme.athayde.nc@gmail.com
+ * #phone      : 81 99687.3959
+ * #profession : senior full stack developer analyst
+ * #date       : 05/04/2020
+-->
+
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Add Person</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" formControlName="name" placeholder="name" name="name" class="form-control" id="name">
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <input type="text" formControlName="gender" placeholder="gender" name="gender" class="form-control" id="gender">
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="text" formControlName="email" placeholder="email" name="email" class="form-control" id="email">
+    </div>
+
+    <div class="form-group">
+      <label for="birthday">Birthday:</label>
+      <input type="text" formControlName="birthday" placeholder="birthday" name="birthday" class="form-control" id="birthday">
+    </div>
+
+    <div class="form-group">
+      <label for="naturalness">Naturalness:</label>
+      <input type="text" formControlName="naturalness" placeholder="naturalness" name="naturalness" class="form-control" id="naturalness">
+    </div>
+
+    <div class="form-group">
+      <label for="nationality">Nationality:</label>
+      <input type="text" formControlName="nationality" placeholder="nationality" name="nationality" class="form-control" id="nationality">
+    </div>
+
+    <div class="form-group">
+      <label for="cpf">CPF:</label>
+      <input type="text" formControlName="cpf" placeholder="cpf" name="cpf" class="form-control" id="cpf">
+    </div>
+
+    <button class="btn btn-success">Add</button>
+  </form>
+</div>
